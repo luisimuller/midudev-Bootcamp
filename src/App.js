@@ -1,15 +1,20 @@
+import Header from "./Componentes/Header" 
+import Content from "./Componentes/Content"
 
-import './App.css';
-import Mensaje from './mensaje';
 
-function App() {
+const App = () => {
+ 
 
-  
   return (
-    <div className="App">
-     <Mensaje />
-    </div>
-  );
+    <>
+    <Header title="Half Stack application development" />
+    <Content part='Fundamentals of React' excercise='10' />
+    <Content part='Using props to pass data' excercise='7' />
+    <Content part='State of a component' excercise='14' />
+
+
+    </>
+  )
 }
 
-export default App;
+export default App
